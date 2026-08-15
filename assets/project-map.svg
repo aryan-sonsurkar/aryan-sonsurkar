@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-label="Project constellation map showing key repositories as connected destinations">
+  <defs>
+    <linearGradient id="pm-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111633;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pm-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#7b61ff;stop-opacity:0.1" />
+    </linearGradient>
+    <filter id="pm-glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="node-glow">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="400" fill="url(#pm-bg)" rx="8" />
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.08">
+    <circle cx="50" cy="30" r="0.8" /><circle cx="150" cy="55" r="1" />
+    <circle cx="300" cy="25" r="0.6" /><circle cx="500" cy="45" r="0.9" />
+    <circle cx="700" cy="35" r="0.7" /><circle cx="850" cy="50" r="1" />
+    <circle cx="100" cy="370" r="0.8" /><circle cx="400" cy="380" r="0.6" />
+    <circle cx="650" cy="375" r="0.9" /><circle cx="800" cy="385" r="0.7" />
+  </g>
+
+  <!-- Connection lines between projects (flight paths) -->
+  <g stroke="#00d4ff" stroke-width="0.8" fill="none" opacity="0.15">
+    <!-- Fixly-Desktop to mod-codes-ide -->
+    <path d="M 200,120 Q 300,90 400,130" stroke-dasharray="4,4" />
+    <!-- mod-codes-ide to SmartPark -->
+    <path d="M 400,130 Q 500,160 600,120" stroke-dasharray="4,4" />
+    <!-- SmartPark to Portfolio -->
+    <path d="M 600,120 Q 700,90 780,140" stroke-dasharray="4,4" />
+    <!-- Fixly-Desktop to ESP32 -->
+    <path d="M 200,120 Q 250,200 300,250" stroke-dasharray="4,4" />
+    <!-- ESP32 to Industrial-Hackathon -->
+    <path d="M 300,250 Q 400,280 500,260" stroke-dasharray="4,4" />
+    <!-- Industrial-Hackathon to git-system -->
+    <path d="M 500,260 Q 580,290 650,270" stroke-dasharray="4,4" />
+    <!-- git-system to weekly-leetcode -->
+    <path d="M 650,270 Q 720,300 780,280" stroke-dasharray="4,4" />
+    <!-- Cross connections -->
+    <path d="M 400,130 Q 380,200 300,250" stroke-dasharray="2,6" opacity="0.08" />
+    <path d="M 600,120 Q 620,200 650,270" stroke-dasharray="2,6" opacity="0.08" />
+  </g>
+
+  <!-- Project Nodes -->
+
+  <!-- Fixly-Desktop (most active) -->
+  <g filter="url(#node-glow)">
+    <circle cx="200" cy="120" r="8" fill="#00d4ff" opacity="0.2" />
+    <circle cx="200" cy="120" r="5" fill="#00d4ff" opacity="0.6" />
+    <circle cx="200" cy="120" r="2.5" fill="#ffffff" opacity="0.9" />
+  </g>
+  <text x="200" y="105" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="12" font-weight="600" fill="#e0e6ff">Fixly-Desktop</text>
+  <text x="200" y="145" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="9" fill="#5a6380">Desktop App</text>
+  <text x="200" y="157" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="8" fill="#3a4060">TypeScript</text>
+
+  <!-- mod-codes-ide (AI Editor) -->
+  <g filter="url(#node-glow)">
+    <circle cx="400" cy="130" r="8" fill="#7b61ff" opacity="0.2" />
+    <circle cx="400" cy="130" r="5" fill="#7b61ff" opacity="0.6" />
+    <circle cx="400" cy="130" r="2.5" fill="#ffffff" opacity="0.9" />
+  </g>
+  <text x="400" y="115" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="12" font-weight="600" fill="#e0e6ff">mod-codes-ide</text>
+  <text x="400" y="155" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="9" fill="#5a6380">AI Code Editor</text>
+  <text x="400" y="167" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="8" fill="#3a4060">JavaScript + Ollama</text>
+
+  <!-- SmartPark DBMS -->
+  <g filter="url(#node-glow)">
+    <circle cx="600" cy="120" r="7" fill="#00d4ff" opacity="0.15" />
+    <circle cx="600" cy="120" r="4.5" fill="#00d4ff" opacity="0.5" />
+    <circle cx="600" cy="120" r="2" fill="#ffffff" opacity="0.9" />
+  </g>
+  <text x="600" y="105" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="12" font-weight="600" fill="#e0e6ff">SmartPark</text>
+  <text x="600" y="145" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="9" fill="#5a6380">DBMS Project</text>
+  <text x="600" y="157" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="8" fill="#3a4060">TypeScript</text>
+
+  <!-- Portfolio -->
+  <g filter="url(#node-glow)">
+    <circle cx="780" cy="140" r="7" fill="#7b61ff" opacity="0.15" />
+    <circle cx="780" cy="140" r="4.5" fill="#7b61ff" opacity="0.5" />
+    <circle cx="780" cy="140" r="2" fill="#ffffff" opacity="0.9" />
+  </g>
+  <text x="780" y="125" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="12" font-weight="600" fill="#e0e6ff">Portfolio</text>
+  <text x="780" y="165" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="9" fill="#5a6380">arssystem.vercel.app</text>
+  <text x="780" y="177" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="8" fill="#3a4060">TypeScript</text>
+
+  <!-- ESP32 Arc Reactor -->
+  <g filter="url(#node-glow)">
+    <circle cx="300" cy="250" r="7" fill="#00d4ff" opacity="0.15" />
+    <circle cx="300" cy="250" r="4.5" fill="#00d4ff" opacity="0.5" />
+    <circle cx="300" cy="250" r="2" fill="#ffffff" opacity="0.9" />
+  </g>
+  <text x="300" y="235" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="11" font-weight="600" fill="#e0e6ff">ESP32 Arc Reactor</text>
+  <text x="300" y="275" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="9" fill="#5a6380">IoT / LED Model</text>
+  <text x="300" y="287" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="8" fill="#3a4060">C++</text>
+
+  <!-- Industrial-Hackathon-2k26 -->
+  <g filter="url(#node-glow)">
+    <circle cx="500" cy="260" r="7" fill="#ff6b6b" opacity="0.15" />
+    <circle cx="500" cy="260" r="4.5" fill="#ff6b6b" opacity="0.5" />
+    <circle cx="500" cy="260" r="2" fill="#ffffff" opacity="0.9" />
+  </g>
+  <text x="500" y="245" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="11" font-weight="600" fill="#e0e6ff">Industrial Hackathon</text>
+  <text x="500" y="285" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="9" fill="#5a6380">Hackathon 2k26</text>
+  <text x="500" y="297" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="8" fill="#3a4060">CSS</text>
+
+  <!-- git-system -->
+  <g filter="url(#node-glow)">
+    <circle cx="650" cy="270" r="6" fill="#00d4ff" opacity="0.12" />
+    <circle cx="650" cy="270" r="4" fill="#00d4ff" opacity="0.4" />
+    <circle cx="650" cy="270" r="1.8" fill="#ffffff" opacity="0.9" />
+  </g>
+  <text x="650" y="255" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="11" font-weight="600" fill="#e0e6ff">git-system</text>
+  <text x="650" y="295" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="9" fill="#5a6380">Understanding Git</text>
+  <text x="650" y="307" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="8" fill="#3a4060">Python</text>
+
+  <!-- weekly-leetcode -->
+  <g filter="url(#node-glow)">
+    <circle cx="780" cy="280" r="6" fill="#7b61ff" opacity="0.12" />
+    <circle cx="780" cy="280" r="4" fill="#7b61ff" opacity="0.4" />
+    <circle cx="780" cy="280" r="1.8" fill="#ffffff" opacity="0.9" />
+  </g>
+  <text x="780" y="265" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="11" font-weight="600" fill="#e0e6ff">weekly-leetcode</text>
+  <text x="780" y="305" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="9" fill="#5a6380">DSA Practice</text>
+  <text x="780" y="317" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif"
+        font-size="8" fill="#3a4060">C</text>
+
+  <!-- Legend -->
+  <g transform="translate(50, 340)" font-family="'Segoe UI', system-ui, sans-serif" font-size="9" fill="#3a4060">
+    <circle cx="0" cy="0" r="3" fill="#00d4ff" opacity="0.5" />
+    <text x="10" y="4">Software</text>
+    <circle cx="80" cy="0" r="3" fill="#7b61ff" opacity="0.5" />
+    <text x="90" y="4">AI / Web</text>
+    <circle cx="155" cy="0" r="3" fill="#ff6b6b" opacity="0.5" />
+    <text x="165" y="4">Hackathon</text>
+  </g>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="392" width="900" height="2" rx="1" fill="url(#pm-line)" opacity="0.3" />
+</svg>

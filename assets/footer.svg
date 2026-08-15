@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 80" role="img" aria-label="Footer decoration">
+  <defs>
+    <linearGradient id="footer-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:0" />
+      <stop offset="20%" style="stop-color:#0a0e27;stop-opacity:0.8" />
+      <stop offset="80%" style="stop-color:#0a0e27;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0a0e27;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="footer-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0" />
+      <stop offset="30%" style="stop-color:#00d4ff;stop-opacity:0.4" />
+      <stop offset="50%" style="stop-color:#7b61ff;stop-opacity:0.6" />
+      <stop offset="70%" style="stop-color:#00d4ff;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Top line -->
+  <rect x="0" y="10" width="900" height="1" fill="url(#footer-line)" />
+
+  <!-- Center airplane silhouette (small) -->
+  <g transform="translate(450, 35) scale(0.5)" fill="#00d4ff" opacity="0.25">
+    <path d="M -12,0 L -4,-2 L 8,-6 L 12,-2 L 12,2 L 8,6 L -4,2 L -12,0 Z
+             M -2,-2 L -2,-8 L 0,-10 L 2,-8 L 2,-2
+             M 4,-6 L 6,-12 L 8,-12 L 6,-6
+             M 4,6 L 6,12 L 8,12 L 6,6" />
+  </g>
+
+  <!-- Dotted flight path -->
+  <line x1="100" y1="35" x2="420" y2="35" stroke="#00d4ff" stroke-width="0.5" stroke-dasharray="2,6" opacity="0.2" />
+  <line x1="480" y1="35" x2="800" y2="35" stroke="#00d4ff" stroke-width="0.5" stroke-dasharray="2,6" opacity="0.2" />
+
+  <!-- Bottom text -->
+  <text x="450" y="60" text-anchor="middle" font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+        font-size="10" fill="#3a4060" letter-spacing="2">
+    BUILT BRICK BY BRICK
+  </text>
+</svg>

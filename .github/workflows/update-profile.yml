@@ -1,0 +1,85 @@
+name: Update Profile README
+
+on:
+  schedule:
+    # Run weekly on Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force update even if no changes'
+        required: false
+        default: 'false'
+
+# Prevent infinite workflow loops
+permissions:
+  contents: write
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch GitHub data and generate assets
+        env:
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Fetching contribution data..."
+          python scripts/generate_flight_map.py \
+            --user "$GITHUB_USERNAME" \
+            --token "$GITHUB_TOKEN" \
+            --output assets/flight-map.svg
+
+          echo "Fetching repository stats..."
+          python scripts/generate_stats.py \
+            --user "$GITHUB_USERNAME" \
+            --token "$GITHUB_TOKEN" \
+            --output assets/stats.json
+
+      - name: Validate generated SVGs
+        run: |
+          echo "Validating SVG files..."
+          for svg in assets/*.svg; do
+            if [ -f "$svg" ]; then
+              # Check well-formed XML
+              python3 -c "
+          import xml.etree.ElementTree as ET
+          try:
+              ET.parse('$svg')
+              print('  ✓ $svg is valid SVG/XML')
+          except ET.ParseError as e:
+              print(f'  ✗ $svg has XML errors: {e}')
+              exit(1)
+          "
+            fi
+          done
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add assets/
+          if git diff --cached --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in generated assets."
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in generated assets."
+          fi
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true' || github.event.inputs.force == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "chore: update profile assets [automated]"
+          git push
