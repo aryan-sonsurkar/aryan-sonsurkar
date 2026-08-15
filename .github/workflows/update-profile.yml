@@ -2,7 +2,6 @@ name: Update Profile README
 
 on:
   schedule:
-    # Run weekly on Sunday at 00:00 UTC
     - cron: '0 0 * * 0'
   workflow_dispatch:
 
@@ -22,6 +21,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install Pillow imageio numpy
 
       - name: Fetch full contribution history
         env:
@@ -51,25 +53,33 @@ jobs:
           print(f'Range: {dates[0]} to {dates[-1]}')
           "
 
-      - name: Generate flight map SVG
-        run: python scripts/generate_flight_map.py --input data/contributions.json --output assets/flight-map.svg
+      - name: Generate flight animation GIF
+        run: python scripts/generate_flight_animation.py --input data/contributions.json --output assets/flight-map.gif
 
-      - name: Validate generated SVG
+      - name: Validate generated GIF
         run: |
           python -c "
-          import xml.etree.ElementTree as ET
+          from PIL import Image
+          import os
+          gif = Image.open('assets/flight-map.gif')
+          assert gif.format == 'GIF', f'Not GIF: {gif.format}'
+          frames = 0
           try:
-              tree = ET.parse('assets/flight-map.svg')
-              root = tree.getroot()
-              print(f'OK: Valid SVG, root={root.tag}')
-          except ET.ParseError as e:
-              print(f'FAIL: {e}'); exit(1)
+              while True:
+                  frames += 1
+                  gif.seek(gif.tell() + 1)
+          except EOFError:
+              pass
+          size_kb = os.path.getsize('assets/flight-map.gif') / 1024
+          assert frames > 10, f'Too few frames: {frames}'
+          assert size_kb < 8000, f'Too large: {size_kb:.0f} KB'
+          print(f'OK: {frames} frames, {size_kb:.0f} KB, {gif.size}')
           "
 
       - name: Check for changes
         id: changes
         run: |
-          git add data/contributions.json assets/flight-map.svg
+          git add data/contributions.json assets/flight-map.gif
           if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
             echo "No changes detected."
@@ -83,5 +93,5 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "chore: update flight contribution map [automated]"
+          git commit -m "chore: update flight contribution animation [automated]"
           git push

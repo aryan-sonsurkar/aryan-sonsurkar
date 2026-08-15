@@ -24,7 +24,7 @@
 ## Flight Contribution Map
 
 <p align="center">
-  <img src="assets/flight-map.svg" alt="GitHub contribution activity visualized as a flight journey across weeks" width="100%" />
+  <img src="assets/flight-map.gif" alt="Animated flight through GitHub contribution history" width="100%" />
 </p>
 
 <p align="center">

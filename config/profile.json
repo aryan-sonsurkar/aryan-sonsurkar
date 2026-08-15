@@ -1,0 +1,24 @@
+{
+  "name": "ARYAN SONSURKAR",
+  "username": "aryan-sonsurkar",
+  "tagline": "Building things, brick by brick.",
+  "bio": "Computer Engineering student building things from scratch.",
+  "focus_areas": ["Software", "AI/ML", "Systems", "IoT", "Open Source", "Hackathons"],
+  "profile_url": "https://github.com/aryan-sonsurkar",
+  "portfolio_url": "https://arssystem.vercel.app",
+  "colors": {
+    "bg": [10, 14, 39],
+    "bg_end": [17, 22, 51],
+    "accent_cyan": [0, 212, 255],
+    "accent_purple": [123, 97, 255],
+    "text_primary": [224, 230, 255],
+    "text_secondary": [90, 99, 128],
+    "text_tertiary": [58, 64, 96],
+    "grid_empty": [10, 14, 39],
+    "grid_low": [14, 42, 61],
+    "grid_medium": [13, 74, 94],
+    "grid_high": [0, 212, 255],
+    "grid_peak": [123, 97, 255],
+    "star": [255, 255, 255]
+  }
+}
