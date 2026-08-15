@@ -5,13 +5,7 @@ on:
     # Run weekly on Sunday at 00:00 UTC
     - cron: '0 0 * * 0'
   workflow_dispatch:
-    inputs:
-      force:
-        description: 'Force update even if no changes'
-        required: false
-        default: 'false'
 
-# Prevent infinite workflow loops
 permissions:
   contents: write
 
@@ -29,57 +23,65 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Fetch GitHub data and generate assets
+      - name: Fetch full contribution history
         env:
           GITHUB_USERNAME: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo "Fetching contribution data..."
-          python scripts/generate_flight_map.py \
-            --user "$GITHUB_USERNAME" \
-            --token "$GITHUB_TOKEN" \
-            --output assets/flight-map.svg
+        run: python scripts/fetch_contributions.py --user "$GITHUB_USERNAME" --token "$GITHUB_TOKEN" --output data/contributions.json
 
-          echo "Fetching repository stats..."
-          python scripts/generate_stats.py \
-            --user "$GITHUB_USERNAME" \
-            --token "$GITHUB_TOKEN" \
-            --output assets/stats.json
-
-      - name: Validate generated SVGs
+      - name: Validate contribution data
         run: |
-          echo "Validating SVG files..."
-          for svg in assets/*.svg; do
-            if [ -f "$svg" ]; then
-              # Check well-formed XML
-              python3 -c "
+          python -c "
+          import json, sys
+          with open('data/contributions.json') as f:
+              data = json.load(f)
+          records = data.get('records', [])
+          if not records:
+              print('ERROR: No records'); sys.exit(1)
+          dates = [r['date'] for r in records]
+          if dates != sorted(dates):
+              print('ERROR: Dates not sorted'); sys.exit(1)
+          if len(dates) != len(set(dates)):
+              print('ERROR: Duplicate dates'); sys.exit(1)
+          if any(r['contribution_count'] < 0 for r in records):
+              print('ERROR: Negative count'); sys.exit(1)
+          total = sum(r['contribution_count'] for r in records)
+          active = sum(1 for r in records if r['contribution_count'] > 0)
+          print(f'OK: {len(records)} days, {active} active, {total} contributions')
+          print(f'Range: {dates[0]} to {dates[-1]}')
+          "
+
+      - name: Generate flight map SVG
+        run: python scripts/generate_flight_map.py --input data/contributions.json --output assets/flight-map.svg
+
+      - name: Validate generated SVG
+        run: |
+          python -c "
           import xml.etree.ElementTree as ET
           try:
-              ET.parse('$svg')
-              print('  ✓ $svg is valid SVG/XML')
+              tree = ET.parse('assets/flight-map.svg')
+              root = tree.getroot()
+              print(f'OK: Valid SVG, root={root.tag}')
           except ET.ParseError as e:
-              print(f'  ✗ $svg has XML errors: {e}')
-              exit(1)
+              print(f'FAIL: {e}'); exit(1)
           "
-            fi
-          done
 
       - name: Check for changes
         id: changes
         run: |
-          git add assets/
+          git add data/contributions.json assets/flight-map.svg
           if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
-            echo "No changes detected in generated assets."
+            echo "No changes detected."
           else
             echo "changed=true" >> $GITHUB_OUTPUT
-            echo "Changes detected in generated assets."
+            echo "Changes detected."
           fi
 
-      - name: Commit and push changes
-        if: steps.changes.outputs.changed == 'true' || github.event.inputs.force == 'true'
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "chore: update profile assets [automated]"
+          git commit -m "chore: update flight contribution map [automated]"
           git push
