@@ -47,6 +47,19 @@
 
 ---
 
+## GitHub Activity
+
+<p align="center">
+  <img src="assets/stats-card.svg" alt="GitHub Stats" width="400" />
+  <img src="assets/languages-card.svg" alt="Top Languages" width="400" />
+</p>
+
+<p align="center">
+  <sub>Regenerated automatically every week.</sub>
+</p>
+
+---
+
 ## Philosophy
 
 > **Learn → Build → Break → Fix → Ship**

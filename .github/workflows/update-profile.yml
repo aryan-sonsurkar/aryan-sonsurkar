@@ -31,6 +31,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/fetch_contributions.py --user "$GITHUB_USERNAME" --token "$GITHUB_TOKEN" --output data/contributions.json
 
+      - name: Fetch GitHub stats
+        env:
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_stats.py --user "$GITHUB_USERNAME" --token "$GITHUB_TOKEN" --output assets/stats.json
+
+      - name: Generate stats cards
+        run: python scripts/generate_stats_cards.py --input assets/stats.json --output-dir assets
+
       - name: Validate contribution data
         run: |
           python -c "
@@ -79,7 +88,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git add data/contributions.json assets/flight-map.gif
+          git add data/contributions.json assets/flight-map.gif assets/stats-card.svg assets/languages-card.svg
           if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
             echo "No changes detected."
