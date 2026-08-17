@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="assets/hero.gif" alt="Aryan Sonsurkar - Building things, brick by brick" width="100%" />
+  <img src="https://raw.githubusercontent.com/aryan-sonsurkar/aryan-sonsurkar/main/assets/hero.gif" alt="Aryan Sonsurkar - Building things, brick by brick" width="100%" />
 </p>
 
 <p align="center">
-  <img src="assets/boot.gif" alt="Terminal boot log for Aryan Sonsurkar's profile" width="100%" />
+  <img src="https://raw.githubusercontent.com/aryan-sonsurkar/aryan-sonsurkar/main/assets/boot.gif" alt="Terminal boot log for Aryan Sonsurkar's profile" width="100%" />
 </p>
 
 <p align="center">
@@ -29,7 +29,7 @@ Every project here is a waypoint in a flight plan I'm still writing. Dec 2025 wa
 ## Flight Contribution Map
 
 <p align="center">
-  <img src="assets/flight-map.gif" alt="Animated flight through GitHub contribution history" width="100%" />
+  <img src="https://raw.githubusercontent.com/aryan-sonsurkar/aryan-sonsurkar/main/assets/flight-map.gif" alt="Animated flight through GitHub contribution history" width="100%" />
 </p>
 
 <p align="center">
@@ -53,7 +53,7 @@ Every project here is a waypoint in a flight plan I'm still writing. Dec 2025 wa
 ## Project Constellation
 
 <p align="center">
-  <img src="assets/project-map.gif" alt="Animated map of projects as stars in a constellation" width="100%" />
+  <img src="https://raw.githubusercontent.com/aryan-sonsurkar/aryan-sonsurkar/main/assets/project-map.gif" alt="Animated map of projects as stars in a constellation" width="100%" />
 </p>
 
 <p align="center">
@@ -80,8 +80,8 @@ Every project here is a waypoint in a flight plan I'm still writing. Dec 2025 wa
 ## GitHub Activity
 
 <p align="center">
-  <img src="assets/stats-card.svg" alt="GitHub Stats" width="400" />
-  <img src="assets/languages-card.svg" alt="Top Languages" width="400" />
+  <img src="https://raw.githubusercontent.com/aryan-sonsurkar/aryan-sonsurkar/main/assets/stats-card.svg" alt="GitHub Stats" width="400" />
+  <img src="https://raw.githubusercontent.com/aryan-sonsurkar/aryan-sonsurkar/main/assets/languages-card.svg" alt="Top Languages" width="400" />
 </p>
 
 <p align="center">
