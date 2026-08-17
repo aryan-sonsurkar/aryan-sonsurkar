@@ -65,6 +65,15 @@ jobs:
       - name: Generate flight animation GIF
         run: python scripts/generate_flight_animation.py --input data/contributions.json --output assets/flight-map.gif
 
+      - name: Generate animated hero
+        run: python scripts/generate_hero_animation.py --output assets/hero.gif
+
+      - name: Generate terminal boot intro
+        run: python scripts/generate_boot_animation.py --output assets/boot.gif
+
+      - name: Generate project star map
+        run: python scripts/generate_project_map_animation.py --output assets/project-map.gif
+
       - name: Validate generated GIF
         run: |
           python -c "
@@ -88,7 +97,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git add data/contributions.json assets/flight-map.gif assets/stats-card.svg assets/languages-card.svg
+          git add data/contributions.json assets/flight-map.gif assets/stats-card.svg assets/languages-card.svg assets/hero.gif assets/boot.gif assets/project-map.gif
           if git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
             echo "No changes detected."

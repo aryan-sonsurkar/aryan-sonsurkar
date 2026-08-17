@@ -1,10 +1,28 @@
 <p align="center">
-  <img src="assets/hero.svg" alt="Aryan Sonsurkar - Building things, brick by brick" width="100%" />
+  <img src="assets/hero.gif" alt="Aryan Sonsurkar - Building things, brick by brick" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/boot.gif" alt="Terminal boot log for Aryan Sonsurkar's profile" width="100%" />
 </p>
 
 <p align="center">
   <em>Diploma Computer Engineering student. I learn by building.</em>
 </p>
+
+---
+
+## Flight Log
+
+Every project here is a waypoint in a flight plan I'm still writing. Dec 2025 was a blank page — Python exercises to learn the language. By Jul 2026 I was shipping a code editor built from scratch.
+
+| Waypoint | What happened |
+| --- | --- |
+| **Dec 2025** | First Python scripts — number guessing, calculators, a banking system. Learning the language by writing tiny things that run. |
+| **Jan 2026** | First hardware — ESP32 OLED display, an Iron Man arc reactor desk model, a traffic light signal. Code left the laptop. |
+| **Mar 2026** | First real project — customer support AI assistant for Accunity Services LLP (Industrial Hackathon). Working with a team on something people use. |
+| **May 2026** | Built `git-system` to understand how git actually works. |
+| **Jul 2026** | Started [ModCode IDE](https://github.com/aryan-sonsurkar/mod-codes-ide) — a code editor built brick by brick, with local AI. |
 
 ---
 
@@ -24,11 +42,23 @@
 
 **[ModCode IDE](https://github.com/aryan-sonsurkar/mod-codes-ide)** — A browser-first coding environment built from scratch. Not cloning an IDE — understanding and building the underlying pieces brick by brick. Uses local Ollama models for AI assistance.
 
-**[Industrial Hackathon 2k26](https://github.com/aryan-sonsurkar/Industrial-Hackathon-2k26)** — Siemens hackathon project. Working on a Business Analyzer-type solution with a team.
+**[Industrial Hackathon 2k26](https://github.com/aryan-sonsurkar/Industrial-Hackathon-2k26)** — Customer support AI assistant built for Accunity Services LLP during the hackathon. My first time building for a real organization with a team.
 
 **Smart India Hackathon** — Joined a senior team's project as a junior. Learning by contributing to a real engineering problem.
 
 **Agency** — Exploring real-world software projects with friends. Figuring out how to build things that people actually use.
+
+---
+
+## Project Constellation
+
+<p align="center">
+  <img src="assets/project-map.gif" alt="Animated map of projects as stars in a constellation" width="100%" />
+</p>
+
+<p align="center">
+  <sub>Each star is a repo. The glowing dot follows the order I built them.</sub>
+</p>
 
 ---
 
