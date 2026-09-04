@@ -35,15 +35,16 @@ C_DIM = (110, 122, 150)
 C_STAR = (255, 255, 255)
 
 # (name, x, y, size, color) - constellation nodes
+# Order = most active right now first (Sep 2026): Fixly beta + ModCodes M164
 PROJECTS = [
-    ("ModCode IDE", 150, 90, 5, C_CYAN),
-    ("Fixly-Desktop", 330, 60, 4, C_PURPLE),
-    ("SmartPark DBMS", 520, 80, 4, C_GREEN),
-    ("git-system", 690, 110, 4, C_CYAN),
-    ("weekly-leetcode", 790, 180, 4, C_PURPLE),
-    ("Portfolio", 700, 250, 4, C_GREEN),
-    ("ESP32 devices", 500, 240, 4, C_CYAN),
-    ("draco-cli", 320, 210, 4, C_PURPLE),
+    ("Fixly-Desktop", 150, 90, 5, C_CYAN),
+    ("ModCode IDE", 330, 60, 4, C_PURPLE),
+    ("Portfolio", 520, 80, 4, C_GREEN),
+    ("Fixly-Updates", 690, 110, 4, C_CYAN),
+    ("InkSpace", 790, 180, 4, C_PURPLE),
+    ("SmartPark DBMS", 700, 250, 4, C_GREEN),
+    ("git-system", 500, 240, 4, C_CYAN),
+    ("weekly-leetcode", 320, 210, 4, C_PURPLE),
     ("Hack 2k26", 140, 200, 4, C_GREEN),
     ("Full-Stack Journey", 250, 300, 3, C_CYAN),
 ]
