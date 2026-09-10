@@ -115,4 +115,4 @@ I don't wait until I know everything. I start building, hit walls, debug, and fi
 - [Portfolio](https://arssystem.vercel.app)
 - [LinkedIn](https://linkedin.com/in/aryan-sonsurkar) — 1,099 followers, Build in Public: Fixly Beta, ModCodes, Day 38/100 Full Stack
 - [Fixly on Product Hunt](https://www.producthunt.com) — Fixly: Stop juggling 6 apps. Start using one.
-- [ModCodes Live](https://mod-codes-ide.vercel.app)
+- [ModCodes Live](https://modcodes.vercel.app)
