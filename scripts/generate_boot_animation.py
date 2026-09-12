@@ -40,7 +40,7 @@ LINES = [
     ("cls", None, None, None),
     ("$", " cat identity.txt", "Diploma Computer Engineering student.", C_TEXT),
     ("$", " ./mission.sh", "[OK] building things, brick by brick", C_GREEN),
-    ("$", " ./stats.sh", "34 repos | 6 followers | currently: mod-codes-ide", C_TEXT),
+    ("$", " ./stats.sh", "36 repos | 657 contributions | currently: fixly (founder)", C_TEXT),
     ("cls", None, None, None),
     ("$", " echo $PHILOSOPHY", "Learn -> Build -> Break -> Fix -> Ship", C_CYAN),
 ]
