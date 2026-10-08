@@ -1,221 +1,11 @@
 {
   "username": "aryan-sonsurkar",
-  "fetched_at": "2026-09-04T08:25:00.428342+00:00",
-  "total_contributions": 657,
-  "active_days": 146,
-  "first_date": "2025-08-31",
-  "last_date": "2026-09-04",
+  "fetched_at": "2026-10-08T13:14:41.727286+00:00",
+  "total_contributions": 827,
+  "active_days": 176,
+  "first_date": "2025-10-05",
+  "last_date": "2026-10-08",
   "records": [
-    {
-      "date": "2025-08-31",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 0
-    },
-    {
-      "date": "2025-09-01",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 1
-    },
-    {
-      "date": "2025-09-02",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 2
-    },
-    {
-      "date": "2025-09-03",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 3
-    },
-    {
-      "date": "2025-09-04",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 4
-    },
-    {
-      "date": "2025-09-05",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 5
-    },
-    {
-      "date": "2025-09-06",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 6
-    },
-    {
-      "date": "2025-09-07",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 0
-    },
-    {
-      "date": "2025-09-08",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 1
-    },
-    {
-      "date": "2025-09-09",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 2
-    },
-    {
-      "date": "2025-09-10",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 3
-    },
-    {
-      "date": "2025-09-11",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 4
-    },
-    {
-      "date": "2025-09-12",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 5
-    },
-    {
-      "date": "2025-09-13",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 6
-    },
-    {
-      "date": "2025-09-14",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 0
-    },
-    {
-      "date": "2025-09-15",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 1
-    },
-    {
-      "date": "2025-09-16",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 2
-    },
-    {
-      "date": "2025-09-17",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 3
-    },
-    {
-      "date": "2025-09-18",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 4
-    },
-    {
-      "date": "2025-09-19",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 5
-    },
-    {
-      "date": "2025-09-20",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 6
-    },
-    {
-      "date": "2025-09-21",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 0
-    },
-    {
-      "date": "2025-09-22",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 1
-    },
-    {
-      "date": "2025-09-23",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 2
-    },
-    {
-      "date": "2025-09-24",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 3
-    },
-    {
-      "date": "2025-09-25",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 4
-    },
-    {
-      "date": "2025-09-26",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 5
-    },
-    {
-      "date": "2025-09-27",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 6
-    },
-    {
-      "date": "2025-09-28",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 0
-    },
-    {
-      "date": "2025-09-29",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 1
-    },
-    {
-      "date": "2025-09-30",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 2
-    },
-    {
-      "date": "2025-10-01",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 3
-    },
-    {
-      "date": "2025-10-02",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 4
-    },
-    {
-      "date": "2025-10-03",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 5
-    },
-    {
-      "date": "2025-10-04",
-      "contribution_count": 0,
-      "intensity": 0,
-      "weekday": 6
-    },
     {
       "date": "2025-10-05",
       "contribution_count": 0,
@@ -2222,9 +2012,213 @@
     },
     {
       "date": "2026-09-04",
-      "contribution_count": 9,
-      "intensity": 3,
+      "contribution_count": 13,
+      "intensity": 4,
       "weekday": 5
+    },
+    {
+      "date": "2026-09-05",
+      "contribution_count": 5,
+      "intensity": 2,
+      "weekday": 6
+    },
+    {
+      "date": "2026-09-06",
+      "contribution_count": 1,
+      "intensity": 1,
+      "weekday": 0
+    },
+    {
+      "date": "2026-09-07",
+      "contribution_count": 15,
+      "intensity": 4,
+      "weekday": 1
+    },
+    {
+      "date": "2026-09-08",
+      "contribution_count": 13,
+      "intensity": 4,
+      "weekday": 2
+    },
+    {
+      "date": "2026-09-09",
+      "contribution_count": 4,
+      "intensity": 2,
+      "weekday": 3
+    },
+    {
+      "date": "2026-09-10",
+      "contribution_count": 7,
+      "intensity": 3,
+      "weekday": 4
+    },
+    {
+      "date": "2026-09-11",
+      "contribution_count": 0,
+      "intensity": 0,
+      "weekday": 5
+    },
+    {
+      "date": "2026-09-12",
+      "contribution_count": 5,
+      "intensity": 2,
+      "weekday": 6
+    },
+    {
+      "date": "2026-09-13",
+      "contribution_count": 1,
+      "intensity": 1,
+      "weekday": 0
+    },
+    {
+      "date": "2026-09-14",
+      "contribution_count": 0,
+      "intensity": 0,
+      "weekday": 1
+    },
+    {
+      "date": "2026-09-15",
+      "contribution_count": 6,
+      "intensity": 3,
+      "weekday": 2
+    },
+    {
+      "date": "2026-09-16",
+      "contribution_count": 20,
+      "intensity": 4,
+      "weekday": 3
+    },
+    {
+      "date": "2026-09-17",
+      "contribution_count": 1,
+      "intensity": 1,
+      "weekday": 4
+    },
+    {
+      "date": "2026-09-18",
+      "contribution_count": 11,
+      "intensity": 4,
+      "weekday": 5
+    },
+    {
+      "date": "2026-09-19",
+      "contribution_count": 3,
+      "intensity": 2,
+      "weekday": 6
+    },
+    {
+      "date": "2026-09-20",
+      "contribution_count": 3,
+      "intensity": 2,
+      "weekday": 0
+    },
+    {
+      "date": "2026-09-21",
+      "contribution_count": 1,
+      "intensity": 1,
+      "weekday": 1
+    },
+    {
+      "date": "2026-09-22",
+      "contribution_count": 10,
+      "intensity": 4,
+      "weekday": 2
+    },
+    {
+      "date": "2026-09-23",
+      "contribution_count": 6,
+      "intensity": 3,
+      "weekday": 3
+    },
+    {
+      "date": "2026-09-24",
+      "contribution_count": 1,
+      "intensity": 1,
+      "weekday": 4
+    },
+    {
+      "date": "2026-09-25",
+      "contribution_count": 1,
+      "intensity": 1,
+      "weekday": 5
+    },
+    {
+      "date": "2026-09-26",
+      "contribution_count": 3,
+      "intensity": 2,
+      "weekday": 6
+    },
+    {
+      "date": "2026-09-27",
+      "contribution_count": 3,
+      "intensity": 2,
+      "weekday": 0
+    },
+    {
+      "date": "2026-09-28",
+      "contribution_count": 4,
+      "intensity": 2,
+      "weekday": 1
+    },
+    {
+      "date": "2026-09-29",
+      "contribution_count": 1,
+      "intensity": 1,
+      "weekday": 2
+    },
+    {
+      "date": "2026-09-30",
+      "contribution_count": 6,
+      "intensity": 3,
+      "weekday": 3
+    },
+    {
+      "date": "2026-10-01",
+      "contribution_count": 4,
+      "intensity": 2,
+      "weekday": 4
+    },
+    {
+      "date": "2026-10-02",
+      "contribution_count": 10,
+      "intensity": 4,
+      "weekday": 5
+    },
+    {
+      "date": "2026-10-03",
+      "contribution_count": 1,
+      "intensity": 1,
+      "weekday": 6
+    },
+    {
+      "date": "2026-10-04",
+      "contribution_count": 12,
+      "intensity": 4,
+      "weekday": 0
+    },
+    {
+      "date": "2026-10-05",
+      "contribution_count": 6,
+      "intensity": 3,
+      "weekday": 1
+    },
+    {
+      "date": "2026-10-06",
+      "contribution_count": 2,
+      "intensity": 1,
+      "weekday": 2
+    },
+    {
+      "date": "2026-10-07",
+      "contribution_count": 0,
+      "intensity": 0,
+      "weekday": 3
+    },
+    {
+      "date": "2026-10-08",
+      "contribution_count": 0,
+      "intensity": 0,
+      "weekday": 4
     }
   ]
 }

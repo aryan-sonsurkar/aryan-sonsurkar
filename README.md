@@ -14,7 +14,7 @@
 
 ## Flight Log
 
-Every project here is a waypoint in a flight plan I'm still writing. Dec 2025 was a blank page — Python exercises to learn the language. By Sep 2026 I was shipping Fixly to beta testers and building ModCodes AI-assisted — I direct, debug, and own every line.
+Every project here is a waypoint in a flight plan I'm still writing. Dec 2025 was a blank page — Python exercises to learn the language. By Oct 2026 I was shipping Fixly v1.0.12 to beta testers and hardening ModCodes for production — I direct, debug, and own every line.
 
 | Waypoint | What happened |
 | --- | --- |
@@ -23,10 +23,11 @@ Every project here is a waypoint in a flight plan I'm still writing. Dec 2025 wa
 | **Mar 2026** | First real project — customer support AI assistant for Accunity Services LLP (Industrial Hackathon). Working with a team on something people use. |
 | **May 2026** | Built `git-system` to understand how git actually works. |
 | **Jun–Aug 2026** | Completed 3-month internship at [Kaevron Technologies](https://www.linkedin.com/company/kaevron-technologies) as Web Developer & AI Intern — Best Performer of June. Client work: Kokanam Marketplace, EDP Committee website with Google Auth + Supabase + QR check-ins, Vishwanath portfolio. Started Day 13–19 of Becoming a Full Stack Developer in public. |
-| **Jul 2026** | Started [ModCode IDE](https://github.com/aryan-sonsurkar/mod-codes-ide) — a code editor I build AI-assisted: AI drafts, I decide architecture, debug, and ship. Day 33: Next.js app shell. Day 34: IDE workspace, design system, chat composer. Now at M164 with production hardening. |
+| **Jul 2026** | Started [ModCode IDE](https://github.com/aryan-sonsurkar/mod-codes-ide) — a code editor I build AI-assisted: AI drafts, I decide architecture, debug, and ship. Day 33: Next.js app shell. Day 34: IDE workspace, design system, chat composer. Past M164 now, in production hardening. |
 | **Jul–Aug 2026** | Built **[Fixly](https://github.com/aryan-sonsurkar/Fixly-Desktop)** with 2 teammates — AI-powered academic OS (Tauri v2 + React/TS + FastAPI + Supabase + Ollama). Assignments, AI assistant, deadlines, PDF analysis, focus tools. 15-day beta with 7 student testers. Team: Aryan (Founder/Product), Aarya Nawar (Testing), Hiba Mujawar (Marketing). |
 | **Aug 2026** | Day 35–38: 3D interactive portfolio ([arssystem.vercel.app](https://arssystem.vercel.app)) — a living district instead of a resume. Mobile overhaul, perf cuts, SEO fixes. Revised DSA + DBMS for Sem 3 (90%+ goal) + weekly LeetCode in C. |
 | **Sep 2026** | Internship done — now **Founder of Fixly**, full-time on the beta. Fixly v1.0.1 — signed auto-updater via `Fixly-Updates`, per-user Ollama selection, dashboard/calendar/auth fixes. ModCodes M159–M164 — AdSense, consent/privacy, usage limits, hydration fixes. Opened Fixly Beta + launched on Product Hunt. 1,099 followers on LinkedIn, building in public. |
+| **Oct 2026** | Fixly **v1.0.10 → v1.0.12** — assignment creation fix (blank Est. Time), relative academic fixture deadlines, v1.0.11 tester package docs, LFS-tracked installer, `Fixly-Updates` release. ModCodes post-M164 hardening — canonical/sitemap/robots fixes, ad-free deployments, precache manifest regen, release checklist + runbook. Portfolio landing upgrade (LinkedIn-sourced about/education/highlights, hero glow, progress bar). Started `weekly-leetcode` (LeetSync) + AI learning in `Full-Stack-Dev-Journey`. 827 contributions, 176 active days. |
 
 ---
 
@@ -44,15 +45,15 @@ Every project here is a waypoint in a flight plan I'm still writing. Dec 2025 wa
 
 ## What I'm Building
 
-**[Fixly-Desktop](https://github.com/aryan-sonsurkar/Fixly-Desktop)** — My company. AI-powered academic OS I founded: one workspace instead of 6 apps — assignments, AI study help, planning, PDF analysis, focus tools. Tauri v2 + React/TS + FastAPI + Supabase + Ollama. Beta open now, live on Product Hunt.
+**[Fixly-Desktop](https://github.com/aryan-sonsurkar/Fixly-Desktop)** — My company. AI-powered academic OS I founded: one workspace instead of 6 apps — assignments, AI study help, planning, PDF analysis, focus tools. Tauri v2 + React/TS + FastAPI + Supabase + Ollama. Beta open now, live on Product Hunt. **Oct 2026: v1.0.12** — assignment creation + deadline fixes, tester docs, auto-updater via `Fixly-Updates`.
 
-**[ModCode IDE](https://github.com/aryan-sonsurkar/mod-codes-ide)** — My Next.js journey in public (Day 33 → M164), built AI-assisted. AI accelerates drafting; I own architecture, debugging, and every shipped line. The real learning is in production hardening: SSR/hydration, App Router, consent/privacy, release automation. 69 commits. Live at mod-codes-ide.vercel.app.
+**[ModCode IDE](https://github.com/aryan-sonsurkar/mod-codes-ide)** — My Next.js journey in public (Day 33 → M164 and beyond), built AI-assisted. AI accelerates drafting; I own architecture, debugging, and every shipped line. The real learning is in production hardening: SSR/hydration, App Router, consent/privacy, release automation. **Oct 2026:** canonical/sitemap/robots fixes, ad-free deployments, precache + release runbook. Live at mod-codes-ide.vercel.app.
 
-**[Portfolio](https://arssystem.vercel.app)** — Interactive 3D district, not a resume. Each building is a chapter. Next.js + Three.js + React. Sep 2026 mobile overhaul: perf cuts, tap-to-enter, decluttered HUD, SEO fixes.
+**[Portfolio](https://arssystem.vercel.app)** — Interactive 3D district, not a resume. Each building is a chapter. Next.js + Three.js + React. **Oct 2026 landing upgrade:** LinkedIn-sourced about/education/highlights, hero glow, progress bar — on top of the Sep 2026 mobile overhaul (perf cuts, tap-to-enter, decluttered HUD, SEO fixes).
 
 **Kaevron Technologies (3-month internship, completed)** — Kokanam Marketplace (admin, brands, pagination, security), EDP website rebuild, client deployments. Production taught me: UI is 30%, debugging/deploy/auth/DB is 70%. Best Performer of June 2026.
 
-**Learning:** Next.js + Full Stack (Day 38/100) + DSA/DBMS for Sem 3 + weekly LeetCode in C.
+**Learning:** Next.js + Full Stack (started AI module Sep 2026) + DSA/DBMS for Sem 3 + [`weekly-leetcode`](https://github.com/aryan-sonsurkar/weekly-leetcode) in public (LeetSync, e.g. Remove Element).
 
 ---
 
@@ -96,7 +97,7 @@ Every project here is a waypoint in a flight plan I'm still writing. Dec 2025 wa
 </p>
 
 <p align="center">
-  <sub>Regenerated automatically every week.</sub>
+  <sub>827 contributions across 176 active days · 36 repos · 9 stars · Updated Oct 8, 2026. Regenerated automatically every week.</sub>
 </p>
 
 ---
@@ -113,6 +114,6 @@ I build AI-assisted — AI drafts, I decide. Every line I ship is mine to explai
 
 - [GitHub](https://github.com/aryan-sonsurkar)
 - [Portfolio](https://arssystem.vercel.app)
-- [LinkedIn](https://linkedin.com/in/aryan-sonsurkar) — Founder of Fixly, building in public: Fixly Beta, ModCodes, Day 38/100 Full Stack
+- [LinkedIn](https://linkedin.com/in/aryan-sonsurkar) — Founder of Fixly, building in public: Fixly v1.0.12, ModCodes hardening, weekly LeetCode
 - [Fixly on Product Hunt](https://www.producthunt.com) — Fixly: Stop juggling 6 apps. Start using one.
 - [ModCodes Live](https://modcode.vercel.app)
